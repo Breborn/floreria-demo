@@ -1315,7 +1315,13 @@ h1, h2, h3, h4 {
     padding: 22px;
   }
 
-  .cart-nav-btn {
+  .cart-nav-btn,
+  .nav-actions .btn-rose {
     display: none;
+  }
+
+  .brand-sub {
+    font-size: 0.56rem;
+    letter-spacing: 0.08em;
   }
 }
