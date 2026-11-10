@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLORA DEL PUERTO • Florería de Autor &amp; Vivero | Viña del Mar &amp; Valparaíso</title>
+  <meta name="description" content="Ramos fresquísimos de temporada, sombrereras y plantas de interior en maceteros artesanales con despacho el mismo día en Viña del Mar y Valparaíso. Página creada por Breborn.">
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=1.0">
+</head>
+<body>
+
+  <!-- Top Announcement Bar (Breborn) -->
+  <aside class="top-bar">
+    <div class="top-bar-container">
+      <div class="top-bar-left">
+        <span>Página creada por <a href="https://breborn.cl" target="_blank" rel="noopener">Breborn</a></span>
+      </div>
+      <a href="https://wa.me/56956823670?text=%C2%A1Hola%20Edo!%20Vi%20la%20maqueta%20de%20Florer%C3%ADa%20de%20Breborn%20y%20quiero%20una%20tienda%20as%C3%AD%20para%20mi%20local." target="_blank" rel="noopener" class="top-bar-cta">
+        ¿Tienes una florería o vivero? Creemos tu tienda online ➔
+      </a>
+    </div>
+  </aside>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <div class="brand-emblem">💐</div>
+        <div class="brand-meta">
+          <span class="brand-name">FLORA DEL PUERTO</span>
+          <span class="brand-sub">FLORERÍA DE AUTOR &amp; VIVERO • V REGIÓN</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#catalogo">Ramos &amp; Catálogo</a>
+        <a href="#personalizado">Ramo a Medida</a>
+        <a href="#vivero">Vivero &amp; Plantas</a>
+        <a href="#despacho">Despachos V Región</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="cart-nav-btn" id="openCartBtn" aria-label="Abrir carrito floral">
+          <span>💐</span>
+          <span class="cart-badge" id="navCartCount">0</span>
+          <strong id="navCartTotal">$0</strong>
+        </button>
+
+        <a href="#personalizado" class="btn btn-rose">
+          <span>Armar Ramo</span>
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#catalogo" class="m-link">💐 Catálogo de Ramos &amp; Sombrereras</a>
+    <a href="#personalizado" class="m-link">✍️ Armar Ramo + Dedicatoria</a>
+    <a href="#vivero" class="m-link">🪴 Plantas de Interior &amp; Maceteros</a>
+    <a href="#despacho" class="m-link">🚐 Despacho Hoy Viña &amp; Valpo</a>
+    <button type="button" class="btn btn-forest btn-block" id="mobileOpenCart">🛒 Ver Mi Pedido (<span id="mobileCartCount">0</span>)</button>
+  </div>
+
+  <!-- Split Hero -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="hero-kicker">
+            <span class="kicker-tag">FLORES FRESCAS DE TEMPORADA • DESPACHO HOY EN VIÑA Y VALPO</span>
+          </div>
+
+          <h1 class="hero-title">
+            Ramos que Hablan por Ti, <br>
+            <span class="text-rose">Entregados con Alma</span> y sin Intermediarios.
+          </h1>
+
+          <p class="hero-lead">
+            Diseñamos arreglos botánicos con flores de corte fresco diario, maceteros de cerámica artesanal y tarjeta dedicatoria impresa gratis. Recibe pedidos directo en tu WhatsApp con el 100% de tu margen.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#catalogo" class="btn btn-forest btn-lg">
+              <span>💐 Explorar Catálogo</span>
+            </a>
+            <a href="#personalizado" class="btn btn-outline-rose btn-lg">
+              <span>✍️ Armar Ramo a Medida</span>
+            </a>
+          </div>
+
+          <div class="hero-trust-grid">
+            <div class="trust-box">
+              <span>🚚</span>
+              <div>
+                <strong>Despacho en el Día</strong>
+                <small>Viña, Reñaca, Concón &amp; Valpo</small>
+              </div>
+            </div>
+            <div class="trust-box">
+              <span>💌</span>
+              <div>
+                <strong>Tarjeta Caligrafiada</strong>
+                <small>Incluida sin costo adicional</small>
+              </div>
+            </div>
+            <div class="trust-box">
+              <span>🌸</span>
+              <div>
+                <strong>Frescura 7+ Días</strong>
+                <small>Corte diario + alimento floral</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="editorial-frame">
+            <img src="assets/hero-floreria.jpg" alt="Ramo artesanal de peonías, rosas de jardín y eucalipto envuelto en lino natural" loading="eager">
+            <div class="hero-float-note">
+              <span class="note-kicker">ENVÍOS HOY V REGIÓN</span>
+              <strong>Pedidos hasta las 16:30 salen en la ruta de la tarde.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog Section with Interactive Category Filters & Size Toggles -->
+  <section class="catalog-section" id="catalogo">
+    <div class="section-container">
+      <div class="section-head">
+        <span class="section-kicker">CATÁLOGO DE TEMPORADA • PRECIOS EN CLP</span>
+        <h2>Arreglos Florales, Cajas &amp; Plantas</h2>
+        <p>Elige tamaño <strong>Estándar</strong> o <strong>Grande (+35% flores)</strong> en cada arreglo y agrégalo al carrito con un clic.</p>
+      </div>
+
+      <div class="filter-bar" id="catalogFilters">
+        <button type="button" class="filter-pill active" data-cat="todos">✨ Todos</button>
+        <button type="button" class="filter-pill" data-cat="ramos">💐 Ramos de Autor</button>
+        <button type="button" class="filter-pill" data-cat="sombrereras">🎁 Sombrereras &amp; Cajas</button>
+        <button type="button" class="filter-pill" data-cat="vivero">🪴 Vivero &amp; Plantas</button>
+        <button type="button" class="filter-pill" data-cat="suscripcion">🔄 Flores Semanales</button>
+      </div>
+
+      <div class="catalog-grid" id="catalogGrid">
+        <!-- Populated dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Custom Bouquet Builder + Dedication Message -->
+  <section class="builder-section" id="personalizado">
+    <div class="section-container">
+      <div class="builder-card">
+        <div class="builder-left">
+          <span class="section-kicker">ATELIER PERSONALIZADO</span>
+          <h2>Arma tu Ramo a Medida + Dedicatoria</h2>
+          <p class="builder-sub">¿Buscas un color especial o enviar un mensaje único? Configura tu ramo ideal aquí y súmalo al pedido.</p>
+
+          <div class="builder-step">
+            <label>1. Elige la paleta de colores y flores:</label>
+            <div class="palette-grid" id="paletteGrid">
+              <button type="button" class="palette-btn active" data-palette="Brisa Costera (Pastel, Peonías & Eucalipto)">
+                <span class="swatch s-pastel"></span>
+                <div>
+                  <strong>Brisa Costera</strong>
+                  <small>Blancos, blush y eucalipto</small>
+                </div>
+              </button>
+              <button type="button" class="palette-btn" data-palette="Atardecer en Valpo (Terracota, Durazno & Rosas)">
+                <span class="swatch s-terracotta"></span>
+                <div>
+                  <strong>Atardecer en Valpo</strong>
+                  <small>Terracota, salmón y ranúnculos</small>
+                </div>
+              </button>
+              <button type="button" class="palette-btn" data-palette="Clásico Romántico (Rosas Rojas & Follaje Fino)">
+                <span class="swatch s-red"></span>
+                <div>
+                  <strong>Clásico Romántico</strong>
+                  <small>Rosas rojas ecuatorianas</small>
+                </div>
+              </button>
+              <button type="button" class="palette-btn" data-palette="Sol del Pacífico (Girasoles & Flores Silvestres)">
+                <span class="swatch s-sun"></span>
+                <div>
+                  <strong>Sol del Pacífico</strong>
+                  <small>Girasoles y tonos vibrantes</small>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="builder-step">
+            <label>2. Elige la presentación / envoltorio:</label>
+            <div class="wrap-grid" id="wrapGrid">
+              <button type="button" class="wrap-btn active" data-wrap="Papel Kraft & Lino Natural" data-price="27990">
+                <strong>Papel Kraft &amp; Lino Natural</strong>
+                <span>$27.990</span>
+              </button>
+              <button type="button" class="wrap-btn" data-wrap="Con Florero de Vidrio Artesanal" data-price="35990">
+                <strong>Con Florero de Vidrio</strong>
+                <span>$35.990</span>
+              </button>
+              <button type="button" class="wrap-btn" data-wrap="Sombrerera Rígida de Lujo + Cinta Seda" data-price="42990">
+                <strong>Sombrerera de Lujo</strong>
+                <span>$42.990</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="builder-step">
+            <label for="customCardMsg">3. Escribe el mensaje para la tarjeta (sin costo):</label>
+            <textarea id="customCardMsg" rows="3" placeholder="Ej: ¡Feliz aniversario mi amor! Gracias por llenar cada día de luz. Un abrazo gigante..."></textarea>
+          </div>
+
+          <button type="button" class="btn btn-rose btn-lg" id="addCustomBouquetBtn">
+            <span>💐 Agregar Mi Ramo Personalizado al Carrito (<strong id="customPriceLabel">$27.990</strong>)</span>
+          </button>
+        </div>
+
+        <div class="builder-right">
+          <div class="preview-card">
+            <img src="assets/flower-hatbox.jpg" alt="Sombrerera floral de rosas y peonías en tonos blush y crema" loading="lazy">
+            <div class="preview-summary">
+              <span class="p-kicker">TU SELECCIÓN ACTUAL</span>
+              <h4 id="previewPalette">Brisa Costera (Pastel, Peonías &amp; Eucalipto)</h4>
+              <p id="previewWrap">Presentación: Papel Kraft &amp; Lino Natural</p>
+              <div class="preview-quote" id="previewCardQuote">💌 “Tarjeta dedicatoria impresa en papel algodón incluida.”</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nursery & Greenery Feature -->
+  <section class="nursery-section" id="vivero">
+    <div class="section-container">
+      <div class="nursery-grid">
+        <div class="nursery-media">
+          <img src="assets/plants-nursery.jpg" alt="Rincón botánico con monstera deliciosa, ficus y maceteros de cerámica artesanal" loading="lazy">
+        </div>
+        <div class="nursery-copy">
+          <span class="section-kicker">VIVERO URBANO &amp; REGALOS VIVOS</span>
+          <h2>Plantas Listas para Regalar con Macetero Cerámico</h2>
+          <p>
+            Perfectas para inaugurar hogares, agradecer a clientes o renovar tu rincón favorito. Entregamos cada planta trasplantada en sustrato aireado con guía práctica de riego para clima costero.
+          </p>
+          <ul class="nursery-list">
+            <li>🪴 Monstera Deliciosa, Ficus Lyrata, Zamioculca &amp; Sansevieria</li>
+            <li>🏺 Maceteros en greda esmaltada, crema mate y terracota chilena</li>
+            <li>🎁 Opción regalo corporativo y decoración verde para cafés y locales</li>
+          </ul>
+          <a href="#catalogo" class="btn btn-forest" onclick="filterToVivero()">Ver Plantas del Vivero ➔</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locations & Dispatch Info -->
+  <section class="dispatch-section" id="despacho">
+    <div class="section-container">
+      <div class="section-head">
+        <span class="section-kicker">COBERTURA V REGIÓN CHILE</span>
+        <h2>Talleres &amp; Despachos Programados el Mismo Día</h2>
+      </div>
+
+      <div class="dispatch-grid">
+        <div class="dispatch-card">
+          <span class="d-tag">VIÑA DEL MAR</span>
+          <h3>Taller 4 Norte &amp; Despachos</h3>
+          <p>📍 4 Norte 518, Sector Poniente, Viña del Mar</p>
+          <p>🕒 Lunes a Sábado: 09:30 - 19:00 hrs | Domingo AM</p>
+          <p>🚐 Envío a Viña Plan/Poniente: <strong>$3.500</strong> | Reñaca &amp; Concón: <strong>$4.500</strong></p>
+        </div>
+
+        <div class="dispatch-card">
+          <span class="d-tag d-port">VALPARAÍSO</span>
+          <h3>Espacio Cerro Concepción</h3>
+          <p>📍 Templeman 285, Cerro Concepción, Valparaíso</p>
+          <p>🕒 Martes a Domingo: 10:00 - 19:00 hrs</p>
+          <p>🚐 Envío a Plan y Cerros de Valparaíso: <strong>$4.000</strong> | Retiro en taller: <strong>$0</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breborn Showcase Banner -->
+  <section class="breborn-banner-section">
+    <div class="section-container">
+      <div class="breborn-banner-card">
+        <div class="bb-content">
+          <span class="bb-tag">PROPUESTA COMERCIAL BREBORN.CL</span>
+          <h3>¿Tienes una Florería, Vivero o Emprendimiento Botánico en la V Región?</h3>
+          <p>
+            En <strong>Breborn</strong> diseñamos y entregamos tu propia tienda online en <strong>4 a 5 días hábiles</strong> con catálogo de ramos por tamaño, configurador de tarjetas dedicatorias, cálculo de despacho por comuna y pedidos directos a tu WhatsApp sin pagar comisiones por venta.
+          </p>
+        </div>
+        <div class="bb-action">
+          <a href="https://wa.me/56956823670?text=%C2%A1Hola%20Edo!%20Vi%20la%20maqueta%20de%20Florer%C3%ADa%20de%20Breborn%20y%20quiero%20una%20tienda%20as%C3%AD%20para%20mi%20negocio." target="_blank" rel="noopener" class="btn btn-breborn-cyan">
+            Quiero mi Tienda con Breborn ➔
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clean Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="f-col">
+          <div class="brand-logo footer-brand">
+            <div class="brand-emblem">💐</div>
+            <span class="brand-name">FLORA DEL PUERTO</span>
+          </div>
+          <p class="f-desc">Florería de autor y vivero urbano en Viña del Mar y Valparaíso. Ramos frescos de temporada, sombrereras y regalos botánicos con despacho propio.</p>
+        </div>
+
+        <div class="f-col">
+          <h4>Navegación</h4>
+          <ul class="f-links">
+            <li><a href="#catalogo">Ramos &amp; Catálogo</a></li>
+            <li><a href="#personalizado">Ramo a Medida</a></li>
+            <li><a href="#vivero">Plantas &amp; Vivero</a></li>
+            <li><a href="#despacho">Tarifas de Despacho</a></li>
+          </ul>
+        </div>
+
+        <div class="f-col">
+          <h4>Talleres V Región</h4>
+          <p>• 4 Norte 518, Viña del Mar</p>
+          <p>• Templeman 285, Cerro Concepción, Valpo</p>
+          <p>• Pedidos WhatsApp: +56 9 5682 3670</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FLORA DEL PUERTO Florería &amp; Vivero. Página creada por <a href="https://breborn.cl" target="_blank" rel="noopener">Breborn</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-Over Cart & Delivery Drawer -->
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div>
+        <span class="d-kicker">TU PEDIDO FLORAL</span>
+        <h3>Carrito &amp; Despacho</h3>
+      </div>
+      <button type="button" class="close-drawer" id="closeCartBtn" aria-label="Cerrar carrito">✕</button>
+    </div>
+
+    <div class="drawer-body">
+      <div id="cartItemsContainer" class="cart-items-list">
+        <!-- Items rendered by app.js -->
+      </div>
+
+      <div class="drawer-checkout-fields">
+        <div class="dc-group">
+          <label for="deliveryCommune">Zona de entrega / retiro (V Región)</label>
+          <select id="deliveryCommune">
+            <option value="0" data-label="Retiro en Taller Viña / Valpo">Retiro en Taller Viña 4 Norte o Valpo ($0)</option>
+            <option value="3500" data-label="Despacho Viña del Mar Plan / Poniente" selected>Despacho Viña del Mar Plan / Poniente (+$3.500)</option>
+            <option value="4000" data-label="Despacho Valparaíso Plan / Cerros">Despacho Valparaíso Plan / Cerros (+$4.000)</option>
+            <option value="4500" data-label="Despacho Reñaca / Concón / Recreo">Despacho Reñaca, Concón o Recreo (+$4.500)</option>
+          </select>
+        </div>
+
+        <div class="dc-row-2">
+          <div class="dc-group">
+            <label for="deliveryDay">Cuándo entregar</label>
+            <select id="deliveryDay">
+              <option value="Hoy mismo">Hoy mismo</option>
+              <option value="Mañana">Mañana</option>
+              <option value="Este Fin de Semana">Este Fin de Semana</option>
+              <option value="Coordinar fecha exacta">Otra fecha (a coordinar)</option>
+            </select>
+          </div>
+          <div class="dc-group">
+            <label for="deliveryWindow">Bloque horario</label>
+            <select id="deliveryWindow">
+              <option value="Mañana (10:00 a 13:30)">Mañana (10:00 – 13:30)</option>
+              <option value="Tarde (14:30 a 19:00)">Tarde (14:30 – 19:00)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="dc-group">
+          <label for="recipientName">Nombre de quien recibe + Dirección de entrega</label>
+          <input type="text" id="recipientName" placeholder="Ej: Sofía Muñoz • 10 Norte 780, depto 402, Viña">
+        </div>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="df-row">
+        <span>Subtotal Productos</span>
+        <strong id="drawerSubtotal">$0</strong>
+      </div>
+      <div class="df-row">
+        <span>Envío Seleccionado</span>
+        <strong id="drawerShipping">$3.500</strong>
+      </div>
+      <div class="df-total">
+        <span>Total Pedido</span>
+        <strong id="drawerTotal">$3.500</strong>
+      </div>
+
+      <button type="button" class="btn btn-whatsapp btn-lg btn-block" id="checkoutWaBtn">
+        <span>💬 Enviar Pedido por WhatsApp</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Floating Cart Trigger (Mobile Friendly) -->
+  <button type="button" class="floating-wa" id="floatingCartBtn" aria-label="Ver pedido WhatsApp">
+    <span>💐</span>
+    <span>Ver Pedido (<span id="floatCount">0</span>)</span>
+  </button>
+
+  <div class="toast" id="toast">✓ Agregado al carrito</div>
+
+  <script src="app.js?v=1.0"></script>
+</body>
+</html>
