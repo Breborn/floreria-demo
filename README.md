@@ -1,4 +1,4 @@
-# FLORA DEL PUERTO — Florería de Autor & Vivero Botánico (Maqueta Breborn)
+# FLORERÍA — Florería de Autor & Vivero Botánico (Maqueta Breborn)
 
 Maqueta e-commerce interactiva desarrollada para florerías y viveros locales en **Viña del Mar y Valparaíso, Chile**.
 

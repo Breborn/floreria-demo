@@ -1,5 +1,5 @@
 /**
- * FLORA DEL PUERTO • Florería de Autor & Vivero Botánico (V Región, Chile)
+ * FLORERÍA • Flores de Temporada & Vivero Botánico (V Región, Chile)
  * Catálogo filtrable, Ramo a Medida + Carrito con Despacho por Comuna a WhatsApp
  * Página creada por Breborn.cl
  */
@@ -320,7 +320,7 @@ function sendCartWhatsApp() {
   });
 
   const msg = [
-    `¡Hola! 💐 Quiero hacer un pedido en *FLORA DEL PUERTO*:`,
+    `¡Hola! 💐 Quiero hacer un pedido en *FLORERÍA*:`,
     ``,
     ...itemsLines,
     ``,
